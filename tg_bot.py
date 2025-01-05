@@ -14,7 +14,7 @@ def generate_response(user_input):
     return response
 
 
-tg_token = ""
+tg_token = input("Enter telegram token: ")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Привет! Я чат-бот. Просто напиши мне сообщение, и я отвечу!")

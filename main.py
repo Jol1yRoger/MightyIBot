@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
 
     print("Starting telegram bot")
-
+    
     application = Application.builder().token(tg_token).build()
 
     application.add_handler(CommandHandler("start", start))
