@@ -9,7 +9,7 @@ dataset = []
 
 # Проходимся по всем чатам
 for chat in data['chats']['list']:
-    if 'messages' in chat and chat['type'] != "saved_messages":
+    if 'messages' in chat and chat['type'] != "saved_messages" and chat['name'] != '.':
         messages = chat['messages']
         # Генерация пар вопрос-ответ
         for i in range(len(messages) - 1):
